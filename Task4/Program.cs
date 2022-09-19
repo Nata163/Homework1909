@@ -44,13 +44,6 @@ double GetMinNumber(double[] arr)
     return minNumber;
 }
 
-double GetDifferenceMaxMin(double max, double min)
-{
-    double dif = 0;
-    dif = max - min;
-    return dif;
-}
-
 
 double[] array = FillArrey(10);
 Console.WriteLine("Вывод массива:");
@@ -58,5 +51,4 @@ PrintArray(array);
 Console.WriteLine(" ");
 double max = GetMaxNumber(array);
 double min = GetMinNumber(array);
-double result = GetDifferenceMaxMin(max, min);
-Console.WriteLine($"Разница между максимальным элементом {max} и минимальным {min} составляет {result}");
+Console.WriteLine($"Разница между максимальным элементом {max} и минимальным {min} составляет {max-min}");
